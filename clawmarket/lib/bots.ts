@@ -1,0 +1,136 @@
+export const categories = [
+  { id: 'all', label: 'All Companions' },
+  { id: 'creative', label: 'Creative' },
+  { id: 'production', label: 'Production' },
+  { id: 'publishing', label: 'Publishing' },
+] as const
+
+export type Category = typeof categories[number]['id']
+
+export const bots = [
+  {
+    id: 'nova-creative',
+    characterName: 'NOVA',
+    characterRole: 'CREATIVE DIRECTOR',
+    category: 'creative' as Category,
+    avatar: '/avatars/bob.png',
+    tagline: 'Drives creative vision, sets artistic direction, and inspires every project',
+    description: 'Your AI creative director. Nova generates concepts, builds mood boards, defines visual identity, and keeps your creative output consistent and bold.',
+    color: '#FFD600',
+  },
+  {
+    id: 'ziggy-comic',
+    characterName: 'ZIGGY',
+    characterRole: 'COMIC BOOK WRITER',
+    category: 'creative' as Category,
+    avatar: '/avatars/specter.png',
+    tagline: 'Scripts panels, builds story arcs, and brings characters to life',
+    description: 'Your AI comic book writer. Ziggy drafts panel descriptions, writes dialogue, develops characters, and structures storylines from concept to final page.',
+    color: '#8B5CF6',
+  },
+  {
+    id: 'luna-content',
+    characterName: 'LUNA',
+    characterRole: 'CONTENT WRITER',
+    category: 'creative' as Category,
+    avatar: '/avatars/caroline.png',
+    tagline: 'Writes captions, blogs, scripts, and copy that resonates with your audience',
+    description: 'Your AI content writer. Luna crafts compelling captions, long-form articles, video scripts, and brand copy tailored to your voice and audience.',
+    color: '#EC4899',
+  },
+  {
+    id: 'axel-video',
+    characterName: 'AXEL',
+    characterRole: 'AI VIDEO GENERATOR',
+    category: 'production' as Category,
+    avatar: '/avatars/harsh.png',
+    tagline: 'Generates video concepts, storyboards, and AI-assisted production guides',
+    description: 'Your AI video generator. Axel creates detailed shot lists, writes AI video prompts, plans transitions, and structures your content for maximum impact.',
+    color: '#3B82F6',
+  },
+  {
+    id: 'pixel-film',
+    characterName: 'PIXEL',
+    characterRole: 'FILMMAKER',
+    category: 'production' as Category,
+    avatar: '/avatars/sean.png',
+    tagline: 'Plans shoots, writes shot scripts, and guides post-production decisions',
+    description: 'Your AI filmmaker. Pixel handles pre-production planning, cinematography direction, scene breakdowns, and editing guidance from script to screen.',
+    color: '#06B6D4',
+  },
+  {
+    id: 'blaze-artist',
+    characterName: 'BLAZE',
+    characterRole: 'DIGITAL ARTIST',
+    category: 'production' as Category,
+    avatar: '/avatars/christopher.png',
+    tagline: 'Creates art concepts, style guides, and AI image generation prompts',
+    description: 'Your AI digital artist. Blaze generates detailed image prompts, defines art styles, creates visual references, and helps you maintain a cohesive aesthetic.',
+    color: '#EF4444',
+  },
+  {
+    id: 'sage-post',
+    characterName: 'SAGE',
+    characterRole: 'POSTING ASSISTANT',
+    category: 'publishing' as Category,
+    avatar: '/avatars/amy.png',
+    tagline: 'Schedules content, writes captions, and manages your publishing calendar',
+    description: 'Your AI posting assistant. Sage plans your content calendar, writes platform-optimized captions, suggests posting times, and keeps your feed consistent.',
+    color: '#F59E0B',
+  },
+  {
+    id: 'reef-editor',
+    characterName: 'REEF',
+    characterRole: 'VIDEO EDITOR',
+    category: 'publishing' as Category,
+    avatar: '/avatars/xavier.png',
+    tagline: 'Guides editing decisions, color grading, and optimizes videos for every platform',
+    description: 'Your AI video editor. Reef advises on cuts, pacing, color grading, audio sync, and platform-specific export settings to make every video pop.',
+    color: '#10B981',
+  },
+  {
+    id: 'echo-music',
+    characterName: 'ECHO',
+    characterRole: 'MUSIC PRODUCER',
+    category: 'publishing' as Category,
+    avatar: '/avatars/walter.png',
+    tagline: 'Produces beats, writes track briefs, and directs your sonic identity',
+    description: 'Your AI music producer. Echo builds production briefs, suggests chord progressions, writes song structures, and helps you craft tracks that match your creative vision.',
+    color: '#8B5CF6',
+  },
+]
+
+export type Bot = typeof bots[number]
+
+export const testimonials = [
+  {
+    name: 'Maya Torres',
+    role: 'Independent Artist',
+    quote: 'Nova gave me a full creative brief in 30 seconds. My content has never looked more cohesive.',
+    stars: 5,
+  },
+  {
+    name: 'Jordan Lee',
+    role: 'YouTube Creator',
+    quote: 'Axel scripts my AI video concepts and Reef handles edit notes. I output 3x more content now.',
+    stars: 5,
+  },
+  {
+    name: 'Priya Nair',
+    role: 'Comic Book Artist',
+    quote: 'Ziggy writes my panel scripts and Blaze generates my art prompts. It\'s like having a whole studio.',
+    stars: 5,
+  },
+  {
+    name: 'Chris Okafor',
+    role: 'Music Producer',
+    quote: 'Echo writes track briefs and Sage posts my drops at the perfect time. My engagement doubled.',
+    stars: 5,
+  },
+  {
+    name: 'Aisha Kamara',
+    role: 'Content Creator',
+    quote: 'Best $40 I spend monthly. Luna writes captions for all my platforms while I focus on creating.',
+    stars: 4,
+  },
+]
